@@ -91,7 +91,7 @@ code: 'git commit  or git commit -m',
 //CODE HERE
 let addRemote = {
 description: 'this allows you to access a repository via a remote connection',
-code: 'git remote',
+code: 'git remote add origin',
 }
 //////////////////PROBLEM 9////////////////////
 /*
