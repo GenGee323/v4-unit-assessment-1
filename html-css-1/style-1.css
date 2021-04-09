@@ -1,0 +1,47 @@
+ *{
+     margin:0; 
+     padding:0;
+ }
+ header {
+        background-color: rgb(236, 131, 130);
+        width: 100vw;
+        align-items: baseline;
+        justify-content: flex-start;
+        border: 1px solid black;
+        padding: 5%;
+        padding-top: 7%;
+}
+ .nav {
+    width:50%;
+    justify-content: space-evenly;
+    display:flex;
+ }  
+
+.aboutHTML {
+    padding: 5%;
+    margin: 2%;
+    border: 5px dotted black;
+}
+.htmlImage {
+width: 150px;
+height: 150px;
+float: left;
+}
+.htmlinfo{
+    width: 100%;
+    height: 100%;
+}
+.aboutCss {
+    padding: 5%;
+    margin: 2%;
+    border: 5px dotted black;
+}
+.cssImage{
+width:100px;
+height: 125px;
+float: right;
+}
+.cssinfo {
+width: 100%;
+height: 100%;
+}
