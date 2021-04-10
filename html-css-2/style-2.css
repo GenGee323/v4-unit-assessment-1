@@ -1,117 +1,42 @@
 *{
-    padding: 0;
-    margin: 0;
-
+    box-sizing: border-box;
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 header{
-    background-color: rgb(137, 252, 214);
-    width: 100vw;
-    height: 70px ;
-    padding-top: 20px;
-    text-align:left;
-    padding-left: 20px;
-    border-top: 1px solid black;
+    margin-left: 30px;
+    line-height: 100px;
 }
-.title{
-    padding-left: 20px;
+h1{
+margin-left: 30px;
+line-height: 100px;
 }
-.box1 {
-    border: dashed black 1px;
-    width: 95vw;
-    height: 26vh;
-    margin-left: 20px;
+h3{
+margin: 0;
+margin-top: 20px;
+margin-left: 20px;
 }
+p{
+    margin-left: ;
+    margin-top: ;
+    color: white;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.box{
+    flex-direction: column;
+    min-height: 200px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
+}
+.purple{
 
-#purple{
-   background-color: purple; 
-   display: flex;
-   justify-content: flex-start;
-   align-items: baseline;
-   border:1px solid red;
 }
-#blue{
-    background-color:blue; 
-   display: flex;
-   justify-content: flex-start;
-   align-items: baseline;
-}
-#pink{
-    background-color: pink; 
-   display: flex;
-   justify-content: flex-start;
-   align-items: baseline;
-}
+.blue{
 
-.box2 {
-    border: dashed black 1px;
-    width: 95vw;
-    height: 40vh;
-    margin-left: 20px;
 }
-
-#face{
-    border: 1px solid  black;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px
-}
-#left{
-border-radius: 50%;
-height: 15px;
-width: 15px;
-}
-#right{
-border-radius: 50%;
-height: 15px;
-width: 15px;
-}
-#right {
-    border-radius: 50%;
-    height: 15px;
-    width: 15px;
-}
-
-#nose {
-    border-radius: 50%;
-    height: 15px;
-    width: 15px;
-}
-#body{
-    border: 1px solid  black;
-    border-radius: 50%;
-    height: 75px;
-    width: 75px;
-}
-
-#one {
- display: flex;
- margin:15%;
- position: relative;
- left: 30px
-}
-#two {
-    display: flex;
- margin:15%;
- position: relative;
- left: 30px
-}
-#three{
-    display: flex;
-    margin:15%;
-    position: relative;
-    left: 30px
-}
-#legs{
-    border: 1px solid  black;
-    border-radius: 50%;
-    height: 150px;
-    width: 150px
-}
-
-
-.box3 {
-    border: dashed black 1px;
-    width: 95vw;
-    height: 26vh;
-    margin-left: 20px;
+.pink{
+    
 }
