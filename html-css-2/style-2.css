@@ -23,16 +23,23 @@ header{
 }
 
 #purple{
-   background-color: rgb(72, 24, 127); 
+   background-color: purple; 
+   display: flex;
+   justify-content: flex-start;
+   align-items: baseline;
+   border:1px solid red;
+}
+#blue{
+    background-color:blue; 
    display: flex;
    justify-content: flex-start;
    align-items: baseline;
 }
-#blue{
-    
-}
 #pink{
-    
+    background-color: pink; 
+   display: flex;
+   justify-content: flex-start;
+   align-items: baseline;
 }
 
 .box2 {
@@ -49,12 +56,25 @@ header{
     width: 50px
 }
 #left{
+border-radius: 50%;
+height: 15px;
+width: 15px;
 }
 #right{
+border-radius: 50%;
+height: 15px;
+width: 15px;
+}
+#right {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
 
-} 
 #nose {
-
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
 }
 #body{
     border: 1px solid  black;
@@ -62,17 +82,24 @@ header{
     height: 75px;
     width: 75px;
 }
+
 #one {
- background-color: black;
- border-radius: 50%;
- height: 15px;
- width: 15px;
+ display: flex;
+ margin:15%;
+ position: relative;
+ left: 30px
 }
 #two {
-
+    display: flex;
+ margin:15%;
+ position: relative;
+ left: 30px
 }
 #three{
-
+    display: flex;
+    margin:15%;
+    position: relative;
+    left: 30px
 }
 #legs{
     border: 1px solid  black;

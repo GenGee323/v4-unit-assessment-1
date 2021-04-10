@@ -40,9 +40,10 @@ const addItem =(item) => {
 */
 
 //CODE HERE
+
 const removeItem = (index) => {
-    groceries.splice (index, 1);
-    displayData ()
+  groceries.splice(index, 1);
+  displayData ();
 }
 //////////////////STEP 6////////////////////
 /*
@@ -56,7 +57,16 @@ const removeItem = (index) => {
 */
 
 //CODE HERE
-
+const checkGroceryCount = () => {
+    groceriesNum = groceries.length
+    if (groceriesNum > 5){
+        return 'That looks like a big trip'
+    }else if (groceriesNum ===1){
+      return '1 item'
+    }else if (groceriesNum >= 1 && groceriesNum < 6){
+        return `${groceriesNum} items`
+    }
+}
 
 //////////////////Check out your code!////////////////////
 /*

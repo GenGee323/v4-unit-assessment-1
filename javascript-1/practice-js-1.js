@@ -47,7 +47,7 @@ const trueOrFalse = (data) =>{
 
 //CODE HERE
 const oddChecker = (num) => {
-  if (num %2 === 0) {
+  if (num %2 !== 0) {
 return 'the number is odd';
   }else {
     return 'the number is even'
@@ -62,7 +62,7 @@ return 'the number is odd';
 
 //CODE HERE
 const iLove = (name, love)=>
-` ${name} loves ${love}`;
+`${name} loves ${love}`;
 
 
 //////////////////PROBLEM 8////////////////////
@@ -71,7 +71,8 @@ const iLove = (name, love)=>
 const faveColors = ['red', 'green', 'black']
 
 //CODE HERE
-const colorCopy = faveColors.slice(0, favColor.length)
+
+let colorCopy = faveColors.slice()
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
@@ -102,7 +103,14 @@ const middleNums = numbers.splice(1,numbers.length -2 )
 */
 
 //CODE HERE
-
+let me = {
+  firstName: 'Gen',
+  state: 'CA',
+  age: 38, 
+  greeter: function (){
+  return `Hello! My name is ${firstName} and I live in ${state}}`
+}
+}
 //////////////////PROBLEM 12////////////////////
 /* 
   Create a function called 'bigOrSmall' that takes in one parameter, 'arr', 
@@ -117,7 +125,17 @@ const middleNums = numbers.splice(1,numbers.length -2 )
 */
 
 // CODE HERE
-
+function bigOrSmall(arr) {
+  let answers = []
+  for (let i=0; i < arr.length; i++){
+    if (arr[i] > 100){
+      answers.push('big')
+    }else {
+      answers.push('small')
+    }
+  }
+  return answers
+}
 //////////////////PROBLEM 13////////////////////
 /* 
   Create a function called 'arrayReverser' that takes in one parameter, 'arr'. 
@@ -129,7 +147,13 @@ const middleNums = numbers.splice(1,numbers.length -2 )
 */
 
 //CODE HERE
-
+function arrayReverser(arr){
+  let reversed= []
+  for(let i= arr.length -1; i>=0 ; i--){
+  reversed.push( arr[i])
+}
+return reversed
+}
 //////////////////PROBLEM 14////////////////////
 
 let global = 'cool string'
@@ -154,16 +178,16 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional']
+let globalScope = ['global']
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
+let firstFunctionScope = ['global', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
-let innerFunctionScope = ['global', 'inner', 'outer', 'functional']
+let innerFunctionScope = ['global', 'inner', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
+let secondFunctionScope = ['global', 'functional']
 
 
 //////////////////PROBLEM 15////////////////////
@@ -173,7 +197,9 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
-
+function firstItem (arr, cb){
+  cb(arr[0])
+}
 //////////////////PROBLEM 16////////////////////
 /* 
   Write a function called isItBob that takes in two arguments: an object and a callback function. 
@@ -183,7 +209,13 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
-
+function isItBob (person, cb){
+  if(person.name === 'Bob'){
+    cb(true)
+  }else {
+    cb(false)
+  }
+}
 //////////////////PROBLEM 17////////////////////
 /*
   Write a function called giveMeDoubles that takes in two arguments: an array of numbers and a callback.  
@@ -192,7 +224,15 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
-
+function giveMeDoubles (number, cb){
+  let newArray = []
+  for(let i=0; i<number.length; i++){
+    let a = number[i]
+    let b = a * 2
+    newArray.push(b)
+  }
+cb(newArray)
+}
 //////////////////PROBLEM 18////////////////////
 /*
   Write a function called carFactory that takes in three parameters: a make, model, and year.  
@@ -219,3 +259,12 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+function carFactory (make, model, year){
+  let car = {
+    make:make,
+    model: model,
+    year: year,
+    isNew: (year > 2018)? true: false
+  }
+  return car
+}
